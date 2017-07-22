@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/kokosakyi/mean-stack-test-app#readme",
   "dependencies": {
-    "express": "^4.15.3"
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.11.3"
   }
 }
