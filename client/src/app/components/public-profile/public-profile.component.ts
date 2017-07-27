@@ -26,13 +26,12 @@ export class PublicProfileComponent implements OnInit {
     this.authService.getPublicProfile(this.currentUrl.username).subscribe(data => {
       // Check if user was found in database
       if (!data.success) {
-        this.foundProfile = false;
         this.messageClass = 'alert alert-danger'; // Return bootstrap error class
         this.message = data.message; // Return error message
       } else {
-        this.foundProfile = true;
         this.username = data.user.username; // Save the username for use in HTML
         this.email = data.user.email; // Save the email for use in HTML
+        this.foundProfile = true; // Enable profile table
       }
     });
   }

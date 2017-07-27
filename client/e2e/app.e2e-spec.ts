@@ -1,14 +1,14 @@
 import { ClientPage } from './app.po';
 
-describe('client App', () => {
+describe('client App', function() {
   let page: ClientPage;
 
   beforeEach(() => {
     page = new ClientPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!!');
+    expect(page.getParagraphText()).toEqual('app works!');
   });
 });
